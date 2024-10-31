@@ -47,11 +47,11 @@ RUN pnpm run build
 FROM base AS prod
 
 # Assign labels
-LABEL org.opencontainers.image.title="server-tools"
-LABEL org.opencontainers.image.description="Docker container for allowing basic server control from Home Assistant"
-LABEL org.opencontainers.image.documentation="https://github.com/knicholson32/server-tools"
+LABEL org.opencontainers.image.title="docker-node-template"
+LABEL org.opencontainers.image.description="Docker container template for NodeJS projects"
+LABEL org.opencontainers.image.documentation="https://github.com/knicholson32/docker-node-template"
 LABEL org.opencontainers.image.authors="Keenan Nicholson, Norris Nicholson"
-LABEL org.opencontainers.image.source="https://github.com/knicholson32/server-tools"
+LABEL org.opencontainers.image.source="https://github.com/knicholson32/docker-node-template"
 
 COPY --from=prod-deps /app/node_modules /app/node_modules
 COPY --from=build /app/dist /app/dist
