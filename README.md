@@ -57,3 +57,9 @@ make create-local && make local
 ## `node_modules`
 
 During development, a `node_modules` folder is created in the top-level directory. Note that the libraries within are not necessarily compatible with your local machine, as they were installed within the Docker container environment. This means that if `npm i` is ran outside the Docker container, the incorrect libraries will be loaded by the dev environment. If issues are encountered with respect to dependencies, delete the `node_modules` folder and try again to allow the container environment to install the correct libraries.
+
+# `ghcr.io`
+You may have to manually push to `ghcr.io` first before this template will auto-update packages:
+```bash
+docker build --file ./docker/Dockerfile --push -t ghcr.io/knicholson32/docker-node-template:main .
+```
