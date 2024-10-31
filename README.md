@@ -18,14 +18,14 @@ The following variables need to be set in the GitHub repo: `Settings → Secrets
 
 Name | Type | Description
 ------------- | ------------- | -----------
-DOCKERHUB_OWNER_TOKEN | Repository Secret | The password for Dockerhub (repo owner account). Used to update the Dockerhub readme.
-DOCKERHUB_OWNER_USERNAME | Repository Secret | The username for Dockerhub (repo owner account). Used to update the Dockerhub readme.
-DOCKERHUB_TOKEN | Repository Secret | A Dockerhub user personal access token for an account with write permissions. Used to push images to Dockerhub.
-DOCKERHUB_USERNAME | Repository Secret | A Dockerhub username for an account with write permissions. Used to push images to Dockerhub.
-CR_PAT | Repository Secret | A GitHub Personal Access Token (classic) for the GitHub repo owner. [More Info.](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic) Used to push images to `ghcr.io`.
-CACHE_REGISTRY_IMAGE | Repository Variable | Target container repo that cache should be stored to.
-REGISTRY_IMAGE_DOCKER | Repository Variable | The Dockerhub repo that this project should be pushed to. (`my-repo/my-project`)
-REGISTRY_IMAGE_GHCR | Repository Variable | The GitHub repo that this project should be pushed to. (`ghcr.io/my-repo/my-project`)
+`DOCKERHUB_OWNER_TOKEN` | Repository Secret | The password for Dockerhub (repo owner account). Used to update the Dockerhub readme.
+`DOCKERHUB_OWNER_USERNAME` | Repository Secret | The username for Dockerhub (repo owner account). Used to update the Dockerhub readme.
+`DOCKERHUB_TOKEN` | Repository Secret | A Dockerhub user personal access token for an account with write permissions. Used to push images to Dockerhub.
+`DOCKERHUB_USERNAME` | Repository Secret | A Dockerhub username for an account with write permissions. Used to push images to Dockerhub.
+`CR_PAT` | Repository Secret | A GitHub Personal Access Token (classic) for the GitHub repo owner. [More Info.](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic) Used to push images to `ghcr.io`.
+`CACHE_REGISTRY_IMAGE` | Repository Variable | Target container repo that cache should be stored to.
+`REGISTRY_IMAGE_DOCKER` | Repository Variable | The Dockerhub repo that this project should be pushed to. (`my-repo/my-project`)
+`REGISTRY_IMAGE_GHCR` | Repository Variable | The GitHub repo that this project should be pushed to. (`ghcr.io/my-repo/my-project`)
 
 
 # Development
