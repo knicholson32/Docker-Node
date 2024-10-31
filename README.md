@@ -38,7 +38,7 @@ The project is bundled and minified by default, with source-maps generated along
 `pnpm` is the default package manager.
 
 ## Environment
-Development for server-tools is done inside a developmental Docker image.
+Development for projects from this template is done inside a developmental Docker image.
 
 Create the dev image and start a local development session:
 

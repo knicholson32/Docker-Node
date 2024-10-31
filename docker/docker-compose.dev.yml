@@ -1,14 +1,11 @@
 version: '3'
 services:
   dev:
-    image: server-tools:dev
-    container_name: server-tools-dev
+    image: docker-node-template:dev
+    container_name: docker-node-template-dev
     volumes:
       - ../node_modules:/app/node_modules
       - ../:/app
-
-    environment:
-      TZ: 'America/New_York'
 
     stop_signal: SIGKILL
     working_dir: /app

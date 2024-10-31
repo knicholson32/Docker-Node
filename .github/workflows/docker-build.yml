@@ -31,7 +31,7 @@ jobs:
         with:
           images: |
             ${{ vars.REGISTRY_IMAGE_DOCKER }}
-            ghcr.io/knicholson32/server-tools
+            ${{ vars.REGISTRY_IMAGE_GHCR }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
